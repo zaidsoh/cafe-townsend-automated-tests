@@ -1,24 +1,23 @@
 describe('Employee management application', function() {
 
-    //Employee attributes
-    var firstName = 'Test';
-    var lastName = 'Employee';
-    var startDate = '2019-01-01';
-    var email = 'test@gmail.com';
+  //Set references to page objects
+  const Login = require ('../page/Login.js');
+  const Main = require ('../page/Main.js');
 
-    //Updated employee attributes
-    var updFirstName = 'Test Updated';
-    var updLastName = 'Employee Updated';
-    var updStartDate = '2019-02-02';
-    var updEmail = 'testupdated@gmail.com'; 
+  //Employee attributes
+  const firstName = 'Test';
+  const lastName = 'Employee';
+  const startDate = '2019-01-01';
+  const email = 'test@gmail.com';
 
-    //Set references to page objects
-    var Login = require ('../page/Login.js');
-    var Main = require ('../page/Main.js');
+  //Updated employee attributes
+  const updFirstName = 'Test Updated';
+  const updLastName = 'Employee Updated';
+  const updStartDate = '2019-02-02';
+  const updEmail = 'testupdated@gmail.com'; 
 
-
-    //Access the web app
-    browser.get('https://cafetownsend-angular-rails.herokuapp.com/login');
+  //Access the web app
+  browser.get('https://cafetownsend-angular-rails.herokuapp.com/login');
 
   //TESTS BEGIN FROM HERE
 
