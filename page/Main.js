@@ -1,18 +1,18 @@
 var Main = function () {
 
-	var grettingMsg = element(by.id('greetings'));
-	var createButton = element (by.id('bAdd'));
-	var addButton = element (by.buttonText('Add'));
-	var firstName = element (by.model ('selectedEmployee.firstName'));
-	var lastName = element (by.model ('selectedEmployee.lastName'));
-	var startDate = element (by.model ('selectedEmployee.startDate'));
-	var email = element (by.model ('selectedEmployee.email'));
-	var employeeList = element.all (by.repeater('employee in employees'));
-	var edit = element (by.id('bEdit'));
-	var update = element (by.buttonText('Update'));
-	var back = element (by.className('subButton bBack'));
-	var del = element (by.id('bDelete'));
-	var logout = element (by.className('main-button'));
+	const grettingMsg = element(by.id('greetings'));
+	const createButton = element (by.id('bAdd'));
+	const addButton = element (by.buttonText('Add'));
+	const firstName = element (by.model ('selectedEmployee.firstName'));
+	const lastName = element (by.model ('selectedEmployee.lastName'));
+	const startDate = element (by.model ('selectedEmployee.startDate'));
+	const email = element (by.model ('selectedEmployee.email'));
+	const employeeList = element.all (by.repeater('employee in employees'));
+	const edit = element (by.id('bEdit'));
+	const update = element (by.buttonText('Update'));
+	const back = element (by.className('subButton bBack'));
+	const del = element (by.id('bDelete'));
+	const logout = element (by.className('main-button'));
 
 
 	this.greetingMessage = function () {
